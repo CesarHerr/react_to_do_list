@@ -17,14 +17,37 @@ const TodosLogic = () => {
     {
       id: 3,
       title: 'Deploy to live server',
-      completed: false,
+      completed: true,
     },
   ]);
+
+  const handleChange = (id) => {
+    setTodos((prevState) =>
+      prevState.map((todo) => {
+        if (todo.id === id) {
+          return {
+            ...todo,
+            completed: !todo.completed,
+          };
+        }
+        return todo;
+      })
+    );
+  };
+
+  const delTodo = (id) => {
+    setTodos([
+      ...todos.filter((todo) => {
+        return todo.id !== id;
+      }),
+    ]);
+  };
 
   return (
     <div>
       <InputTodo />
-      <TodosList todosProps={todos} setTodos={setTodos} /> 
+      <TodosList todosProps={todos} handleChange={handleChange}  delTodo={delTodo}/> 
+      
     </div>
   );
 };
