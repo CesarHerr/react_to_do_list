@@ -1,0 +1,40 @@
+.navbar {
+  border-bottom: solid 1px rgb(226, 216, 216);
+  display: flex;
+  height: 50px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 600px;
+  list-style: none;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  background-color: rebeccapurple;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; 
+  position: absolute;
+  padding: 10px 40px;
+  left: 250px;
+  list-style: none;
+  background-color: #fff;
+  -webkit-box-shadow: 10px 14px 15px -10px rgba(94,87,94,1);
+-moz-box-shadow: 10px 14px 15px -10px rgba(94,87,94,1);
+box-shadow: 10px 14px 15px -10px rgba(94,87,94,1);
+}
+
+.dropdown li {
+  width: 300px;  
+}
+
+button {
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}
