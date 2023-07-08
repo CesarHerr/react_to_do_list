@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { useState, useEffect } from 'react';
 import InputTodo from './InputTodo';
 import TodosList from './TodoList';
+import Header from './Header';
 
 const TodosLogic = () => {
 
@@ -74,4 +75,16 @@ const TodosLogic = () => {
     </div>
   );
 };
-export default TodosLogic;
+
+function TodoWrapped() {
+  return (
+    <div className="wrapper">
+      <Header />        
+    <div className="todos">                  
+       <TodosLogic />
+    </div>
+    </div>
+  );
+}
+
+export default TodoWrapped;
