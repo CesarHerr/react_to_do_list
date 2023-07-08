@@ -18,19 +18,19 @@
 .dropdown {
   display: flex;
   flex-direction: column;
-  max-width: 300px; 
+  max-width: 300px;
   position: absolute;
   padding: 10px 40px;
   left: 250px;
   list-style: none;
   background-color: #fff;
-  -webkit-box-shadow: 10px 14px 15px -10px rgba(94,87,94,1);
--moz-box-shadow: 10px 14px 15px -10px rgba(94,87,94,1);
-box-shadow: 10px 14px 15px -10px rgba(94,87,94,1);
+  -webkit-box-shadow: 10px 14px 15px -10px rgba(94, 87, 94, 1);
+  -moz-box-shadow: 10px 14px 15px -10px rgba(94, 87, 94, 1);
+  box-shadow: 10px 14px 15px -10px rgba(94, 87, 94, 1);
 }
 
 .dropdown li {
-  width: 300px;  
+  width: 300px;
 }
 
 .list button {
