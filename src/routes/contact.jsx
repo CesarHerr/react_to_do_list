@@ -1,5 +1,6 @@
 import { Form } from "react-router-dom";
-import styles from '../styles/contact.module.css'
+import styles from '../styles/contact.module.css';
+import PropTypes from 'prop-types';
 
 function Contact() {
   const contact = {
@@ -36,7 +37,7 @@ function Contact() {
           <p>
             <a
               target="_blank"
-              href={`https://twitter.com/${contact.twitter}`}
+              href={`https://twitter.com/${contact.twitter}`} rel="noreferrer"
             >
               {contact.twitter}
             </a>
@@ -88,6 +89,10 @@ function Favorite({ contact }) {
       </button>
     </Form>
   );
+}
+
+Favorite.propTypes = {
+  contact: PropTypes.string.isRequired,
 }
 
 export default Contact;

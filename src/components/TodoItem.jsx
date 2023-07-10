@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from '../styles/TodoItem.module.css';
 import { FaTrash } from "react-icons/fa";
 import { AiFillEdit } from "react-icons/ai";
+import PropTypes from 'prop-types';
 
 
 const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
@@ -61,4 +62,12 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
     </li>
   );
 };
+
+TodoItem.propTypes = {
+  itemProp: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+  setUpdate: PropTypes.func.isRequired
+}
+
 export default TodoItem;
