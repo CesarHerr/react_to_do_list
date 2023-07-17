@@ -71,7 +71,7 @@ Simple Practice web app using react protected routes and local storage.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can see the live demo of this project [here](https://mrcbq.github.io/react-todo-app/)
+> You can see the live demo of this project
 
 <!-- - No live demo available yet -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
